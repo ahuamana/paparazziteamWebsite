@@ -1,0 +1,41 @@
+.contenedorMenu{
+    background-color: yellow;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    &--logo{
+        display: block;
+
+        background-color: white;
+        border-radius: 0px 0px 50px 50px;
+    }
+    &__menuBox{
+        display: flex;
+        align-items: center;
+
+        &__menu{
+            display: flex;
+            list-style: none;
+            
+            &__item{
+                &--link{
+                    color: black;
+                    text-decoration: none;
+                    padding: 8px 15px;
+                }
+            }
+        }
+        &--img{
+            padding: 8px 15px;
+            align-items: center;
+        }
+    }
+
+}
