@@ -1,5 +1,72 @@
-.contenedorPresentacion{
+.presentacion{
 
-    min-height: 100vh;
-    background-color: yellow;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 80px;
+    //min-height: 1000px;
+    justify-content: space-between;
+    background-color: #ffe400;
+    display: flex;
+
+    // Se agrega 100px que es lo que mide el contenedor de menu
+    margin-top: 100px;
+    &__data{
+        display: block;
+        width: 60%;
+        //border: dotted 3px blue;
+        &__text{
+            &--short{
+                font-size: 14px;
+                font-weight: 500;
+                font-family: 'Muli',Helvetica,Arial,Lucida,sans-serif;
+                padding-top: 200px;
+                color: #544f4f;
+                background: transparent;
+            }
+
+            &--medium{
+            font-family: 'Muli',Helvetica,Arial,Lucida,sans-serif;
+            //text-align: justify;
+            vertical-align: baseline;
+            font-variant: small-caps;
+            font-weight: 800;
+            font-size: 35px;
+            }
+            &--description{
+                font-variant: normal;
+                display: block;
+                justify-content: space-evenly;
+                //border: dotted 3px orange;
+                font-family: 'Muli',Helvetica,Arial,Lucida,sans-serif;
+                //text-align: justify;
+                font-weight: 500;
+                font-size: 14px;
+            }
+            &--button{
+                display: inline-block;
+                border-radius: 5px;
+                //position: absolute;
+                margin-top: 40px;
+                border: solid 2px black;
+                padding: 5px 10px;
+                font-size: 14px;
+                color: black;
+                font-family: 'Muli',Helvetica,Arial,Lucida,sans-serif;
+                font-weight: 400;
+                text-decoration: none;
+                text-shadow: none;
+                
+            }
+        }
+       
+    }
+    &__contenedorImagen{
+        width: 40%;
+        &--img{
+            display: block;
+            width: 100%;
+            //border: dotted 3px red;
+
+        }
+    }
 }

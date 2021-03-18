@@ -1,20 +1,31 @@
-.contenedorMenu{
-    background-color: yellow;
-}
 
 .nav{
     display: flex;
     align-items: center;
-    background-color: yellow;
+    background-color: #ffe400;
     justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    // border: dotted 3px blue;
 
-    &--logo{
-        display: block;
+     /* posicionar siempre el menu */
+     position: fixed;
+     left: 0;
+     right: 0;
+     box-sizing: border-box;
+     z-index: 1;
+     top: 0;
 
-        background-color: white;
-        border-radius: 0px 0px 50px 50px;
+    &__menulogo{
+        width: 100px;
+        &--img{
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            background-color: white;
+            border-radius: 0px 0px 50px 50px;
+    }
     }
     &__menuBox{
         display: flex;
@@ -26,16 +37,25 @@
             
             &__item{
                 &--link{
-                    color: black;
+                    font-weight: 800;
+                    color: #5f5d4b;
                     text-decoration: none;
                     padding: 8px 15px;
+                    font-size: 12px;
+                    background: transparent;
+                    font-family: 'Raleway';
+                    &:hover{color: #e96359;}
                 }
             }
         }
-        &--img{
+        &--iconos{
             padding: 8px 15px;
             align-items: center;
+            color: #5f5d4b;
+            &:hover{color: #e96359;}
         }
     }
 
 }
+
+
