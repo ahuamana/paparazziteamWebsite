@@ -1,13 +1,25 @@
+.start_nav{
+    //contenedor del 
+    position: fixed;
+    display: flex;
+    background-color: #ffe400;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    top: 0;
+    height: 65px;
 
+}
 .nav{
     display: flex;
     align-items: center;
     background-color: #ffe400;
     justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
-    
-    // border: dotted 3px blue;
+    margin: auto;  
+    width: 80%;
+    max-width: 1080px;
+    //border: dotted 3px blue;
 
      /* posicionar siempre el menu */
      position: fixed;
@@ -18,11 +30,12 @@
      top: 0;
 
     &__menulogo{
+        display: flex;
         width: 100px;
         &--img{
             display: block;
             box-sizing: border-box;
-            width: 100%;
+            width: 65%;
             background-color: white;
             border-radius: 0px 0px 50px 50px;
     }

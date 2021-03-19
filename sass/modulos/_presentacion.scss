@@ -1,25 +1,32 @@
-.presentacion{
+.start__presentacion{
+    padding-top: 5%;
+    background-color: #ffe400;
+    
+}
 
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 80px;
+.presentacion{ 
+    padding: 4% 0;
     //min-height: 1000px;
     justify-content: space-between;
     background-color: #ffe400;
     display: flex;
-
+    //border: dotted 3px blueviolet;
     // Se agrega 100px que es lo que mide el contenedor de menu
-    margin-top: 100px;
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+
     &__data{
         display: block;
         width: 60%;
+        padding-right: 10%;
         //border: dotted 3px blue;
         &__text{
             &--short{
                 font-size: 14px;
                 font-weight: 500;
                 font-family: 'Muli',Helvetica,Arial,Lucida,sans-serif;
-                padding-top: 200px;
+                padding-top: 150px;
                 color: #544f4f;
                 background: transparent;
             }
@@ -61,10 +68,14 @@
        
     }
     &__contenedorImagen{
+        //border: dotted 3px olivedrab;
         width: 40%;
+        margin: auto;
         &--img{
+            //margin-right: auto;
+            margin-left: auto;
             display: block;
-            width: 100%;
+            width: 80%;
             //border: dotted 3px red;
 
         }
